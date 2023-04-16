@@ -38,5 +38,6 @@ def clean_data():
     df.línea_credito = df.línea_credito.str.replace("-"," ",regex = False).str.replace("_"," ",regex = False).str.capitalize().str.strip()
     df.dropna(inplace=(True))
     df.drop_duplicates(inplace=(True))	
+    
       
     return df
